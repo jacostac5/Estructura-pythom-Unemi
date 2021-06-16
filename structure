@@ -1,0 +1,28 @@
+""" 
+def mensaje(msg);
+print(msg)
+
+mensaje("Mi primer programa en Python")
+mensaje("Mi segundo programa en Python")"""
+
+class Sintaxis:
+    instancia = 0 # atributo  de clase
+    # __init__ Metodoconstructor que se ejecuta cuando se instancia la clase cuyo objetivo es crear
+    # e inicializar los atributos de la clase. Self es un objeto que representa la clase creada
+    
+    def __init__(self,dato="llamando al constructor"):
+        self.frase=dato # atributo de instancia
+        Sintaxis.instancia = Sintaxis.instancia+1
+
+
+def usodevariables(self):
+    edad, _peso = 50,70.5
+    nombres = 0
+
+
+print("Sintaxis antes de la instancia es: {}".format(Sintaxis.instancia))
+ejer1 = Sintaxis() # Instancia la clase sintaxis y crea el objetivo ejer1(copia de la clase)
+print("Sintaxis antes del ejer1 es: {}".format(Sintaxis.instancia))
+ejer2 = Sintaxis("Instancia 2")
+
+print(ejer1.frase)
